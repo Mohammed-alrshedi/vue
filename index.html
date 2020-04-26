@@ -23,7 +23,7 @@
 
         <div>
 
-            <input type="checkbox" v-model="check" placeholder="text here ...." />
+            <input type="checkbox" v-model="check" placeholder="text here ..." />
             <label for="checkbox" v-if=" check" v-text="check">{{ check+colors() }}</label>
             <label for="checkbox" v-else v-text="check">{{  run() }}</label>
             <input type="text  " v-model="name" value="">
