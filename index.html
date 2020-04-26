@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docuccment</title>
+</head>
+<body>
+    
+    <div id= "first_app">
+
+        <h1 v-text='name'></h1>
+        <hr>
+        <h2>{{age}}</h2>
+        <hr >
+        <h3  v-if="job " >{{ job }}</h3>
+        <h3  v-else >not found job</h3>
+        <hr >
+        <ul><li @mouseover="run()" v-for="skil in skils">{{ skil }}</li></ul>
+        <hr>
+
+        <div v-html="color"></div>
+
+        <div>
+
+            <input type="checkbox" v-model="check" placeholder="text here ...." />
+            <label for="checkbox" v-if=" check" v-text="check">{{ check+colors() }}</label>
+            <label for="checkbox" v-else v-text="check">{{  run() }}</label>
+            <input type="text  " v-model="name" value="">
+
+        </div>
+        <button @hover="run()"> show detilss</button>
+    </div>
+
+    <script src= "js/vue.js" ></script>
+    <script src= "js/js.js" ></script>
+   
+
+</body>
+</html>
